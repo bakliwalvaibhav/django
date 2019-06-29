@@ -71,7 +71,7 @@ def user_login(request):
 
         else:
             print("Someone tried to login and failed")
-            print(f"Username {username} and password {passwword}")
+            print(f"Username {username} and password {password}")
             return HttpResponse("Invalid Login Details")
     else:
         return render(request, 'basic_app/login.html', {})
